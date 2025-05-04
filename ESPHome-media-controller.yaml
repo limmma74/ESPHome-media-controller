@@ -7,19 +7,19 @@ substitutions:
   device_name: media-controller-desk
   friendly_name: "Media Controller desk"
   media_player: media_player.your_media_player
-  api_key: "dLrgP/XXOWI6qTfe0hOdBA9ojg8e1GELX4w4tMtpNWo="
-  ap_password: !secret captive-portal       # set in secrets.yaml or change me!
-  wifi_ssid: !secret wifi_ssid              # set in secrets.yaml or change me!
-  wifi_password: !secret wifi_password      # set in secrets.yaml or change me!
+  api_key: "87O43UP83+TcC1BkS3cxuUc8C2jqkyZZclKu4SWOTc8="
+  ap_password: "xperia2515"       # set in secrets.yaml or change me!
+  wifi_ssid: "XoomNet"             # set in secrets.yaml or change me!
+  wifi_password: "xperia2515"      # set in secrets.yaml or change me!
 
 
 esphome:
-  name: ${device_name}
-  friendly_name: ${friendly_name}
+  name: ${Denby}
+  friendly_name: ${Home}
   comment: ESPHome ${friendly_name}
   name_add_mac_suffix: true
-  platform: ESP8266
-  board: d1_mini
+  platform: ESP32
+  board: lolin_s2_mini
   
   # This will allow for (future) project identification, configuration and updates.
   project:
